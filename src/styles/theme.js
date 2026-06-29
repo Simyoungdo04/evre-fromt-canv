@@ -1,4 +1,4 @@
-export const theme = {
+export const Theme = {
   color: {
     // --- 포인트 칼라 ---
     point: "#0EA5E9", // 포인트 컬러

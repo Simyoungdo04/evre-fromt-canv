@@ -1,13 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import {
-  HeaderWrap,
-  Logo,
-  Nav,
-  NavLink,
-  Btns,
-  LoginBtn,
-  SignupBtn,
-} from "./Header.styles";
+import { HeaderWrap, Logo, Nav, NavLink, Btns } from "./Header.styles";
+import { LoginBtn, SignupBtn } from "../../common/Button/Button.styles";
 
 const navs = [
   { content: "메인화면", nav: "/" },
