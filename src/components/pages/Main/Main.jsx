@@ -8,7 +8,7 @@ import {
   XAxis,
 } from "recharts";
 import { Spacer } from "../../../App.styles";
-import { theme } from "../../../styles/theme";
+import { Theme } from "../../../styles/Theme";
 import {
   ChartCard,
   ChartTitle,
@@ -43,7 +43,7 @@ const Main = () => {
           <ChartTitle>이번주 통계</ChartTitle>
           <ResponsiveContainer width="100%" height={240}>
             <LineChart data={data}>
-              <CartesianGrid vertical={false} stroke={theme.color.border} />
+              <CartesianGrid vertical={false} stroke={Theme.color.border} />
               <XAxis dataKey="day" axisLine={false} tickLine={false} />
               <Tooltip />
               <Legend />
