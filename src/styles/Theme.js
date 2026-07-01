@@ -9,6 +9,7 @@ export const Theme = {
     // --- 배경 ---
     bg: "#F8F9FA", // 배경색
     bgSoft: "#F1F5F9", // 구역 구분색
+    bgDark: "#E2E8F0", // 클릭
 
     // --- 해더 ---
     headerBg: "#FFFFFF",

@@ -27,7 +27,9 @@ const Header = () => {
 
       <Nav>
         {navs.map((n) => (
-          <NavLink onClick={() => navi(n.nav)}>{n.content}</NavLink>
+          <NavLink key={n.nav} onClick={() => navi(n.nav)}>
+            {n.content}
+          </NavLink>
         ))}
       </Nav>
 

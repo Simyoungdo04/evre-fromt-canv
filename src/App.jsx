@@ -4,6 +4,7 @@ import { ErrMsg, Spacer, ErrSpace } from "./App.styles";
 import Footer from "./components/layout/Footer/Footer";
 import Main from "./components/pages/Main/Main";
 import Board from "./features/boards/board/Board";
+import Map from "./features/station/Station/Station";
 
 const App = () => {
   return (
@@ -11,7 +12,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/chargeStations" element={<Spacer />} />
+        <Route path="/chargeStations" element={<Map />} />
         <Route path="/guide" element={<Spacer />} />
         <Route path="/notices" element={<Spacer />} />
         <Route path="/boards" element={<Board />} />

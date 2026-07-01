@@ -124,3 +124,21 @@ export const PageButton = styled.button`
     color: #fff;
   }
 `;
+
+export const NextButton = styled.button`
+  width: 48px;
+  height: 32px;
+  border: none;
+  border-radius: ${Theme.radius.sm};
+  background: ${Theme.color.point};
+  color: ${Theme.color.headerBg};
+  cursor: pointer;
+
+  &:hover {
+    background: ${Theme.color.pointHover};
+  }
+
+  &:active {
+    background: ${Theme.color.pointDark};
+  }
+`;
