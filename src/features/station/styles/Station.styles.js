@@ -160,3 +160,9 @@ export const NextButton = styled.button`
     background: ${Theme.color.pointDark};
   }
 `;
+
+export const ErrorMsg = styled.p`
+  text-align: center;
+  padding: 24px;
+  color: #64748b;
+`;

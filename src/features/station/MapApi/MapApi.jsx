@@ -46,12 +46,15 @@ const MapApi = ({ positions, center, level = 3, focus }) => {
     };
   }, [positions, center, level]);
 
+  // Station.jsx에서 카드 클릭 시 setFocus({ lat, lng })가 호출됨
+  // focus가 바뀌면 이 useEffect가 실행되어 지도 중심을 해당 좌표로 이동
+  // focus가 null이면 (초기값) 아무것도 하지 않음
   useEffect(() => {
     if (!mapRef.current || !focus) return;
     mapRef.current.setCenter(
       new window.kakao.maps.LatLng(focus.lat, focus.lng),
     );
-  }, [focus]);
+  }, [focus]); // focus가 바뀔 때마다 실행
 
   return <div ref={containerRef} style={{ width: "100%", height: "100%" }} />;
 };
