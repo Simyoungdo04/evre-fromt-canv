@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { Theme } from "../../../styles/Theme";
 
-export const SIDEBAR_WIDTH = "220px";
+export const sidebar = "220px";
 
 export const SideBar = styled.aside`
-  width: ${SIDEBAR_WIDTH};
+  width: ${sidebar};
   height: 100vh;
   background: #0f172a;
   display: flex;

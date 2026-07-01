@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Theme } from "../../../styles/Theme";
-import { SIDEBAR_WIDTH } from "../AdminNav/AdminNav.styles";
+import { sidebar } from "../AdminNav/AdminNav.styles";
 
 export const AdminWrap = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ export const AdminWrap = styled.div`
 
 export const MainArea = styled.div`
   flex: 1;
-  margin-left: ${SIDEBAR_WIDTH};
+  margin-left: ${sidebar};
   display: flex;
   flex-direction: column;
   min-height: 100vh;
